@@ -7,4 +7,7 @@ target 'Lab' do
 
   # Pods for Lab
 
+  pod 'RxSwift'
+  pod 'RxCocoa'
+  
 end

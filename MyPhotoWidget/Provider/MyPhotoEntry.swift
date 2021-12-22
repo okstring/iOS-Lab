@@ -10,5 +10,7 @@ import Foundation
 
 struct MyPhotoEntry: TimelineEntry {
     let date: Date
-    let photoURL: String // image
+    let defaultImageName: String = "okstring"
+    let imageData: Data
+    let profileURL: String
 }

@@ -20,12 +20,13 @@ struct MyPhotoWidget: Widget {
         .configurationDisplayName("Github Profile")
         .description("User Repository로 이동합니다.")
         .supportedFamilies([.systemSmall])
+
     }
 }
 
 struct MyPhotoWidget_Previews: PreviewProvider {
     static var previews: some View {
-        MyPhotoWidgetEntryView(entry: MyPhotoEntry(date: Date(), photoURL: "https://avatars.githubusercontent.com/u/62657991?v=4"))
+        MyPhotoWidgetEntryView(entry: MyPhotoEntry(date: Date(), imageData: Data(), profileURL: ""))
             .previewContext(WidgetPreviewContext(family: .systemSmall))
     }
 }

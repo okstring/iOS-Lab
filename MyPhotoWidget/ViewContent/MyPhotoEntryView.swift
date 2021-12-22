@@ -22,16 +22,17 @@ struct MyPhotoWidgetEntryView : View {
                         .allowsTightening(true)
                 }
                 Spacer()
-                Text("Date")
+                Text(DateFormatter.shortTimeFormatter.string(from: entry.date))
                     .font(.body)
                     .fontWeight(.regular)
             }
+            
         }
         .padding(.all, 10)
         .background {
-            Image("okstring")
-        }
-        
-            
+            entry.imageData.isEmpty
+            ? Image("okstring")
+            : Image(uiImage: UIImage(data: entry.imageData) ?? UIImage())
+        }.widgetURL(URL(string: "lab://repo?url=\(entry.profileURL)"))
     }
 }

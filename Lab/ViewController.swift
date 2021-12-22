@@ -9,21 +9,21 @@ import UIKit
 import WidgetKit
 
 class ViewController: UIViewController {
-
+    
+    lazy var mainLabel: UILabel = {
+        let label = UILabel()
+        label.font = .systemFont(ofSize: 24, weight: .bold)
+        label.text = "여기는 메인입니다 :)"
+        label.textColor = .black
+        label.sizeToFit()
+        label.center = self.view.center
+        return label
+    }()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        
-        WidgetCenter.shared.getCurrentConfigurations { result in
-            switch result {
-            case .success(let widgets):
-                print(widgets)
-            case .failure(let error):
-                print(error)
-            }
-        }
+        view.addSubview(mainLabel)
     }
-
-
 }
 

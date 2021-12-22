@@ -13,8 +13,16 @@
 		229F8A28276C180A00F20A34 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 229F8A27276C180A00F20A34 /* Assets.xcassets */; };
 		229F8A2B276C180A00F20A34 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 229F8A29276C180A00F20A34 /* LaunchScreen.storyboard */; };
 		7E432AA027493F32C5CB9C44 /* Pods_Lab.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 53AA8D89109E88497E5A8E89 /* Pods_Lab.framework */; };
+		FC17DEA12773223A00EFBFE1 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC17DEA02773223A00EFBFE1 /* ViewModel.swift */; };
+		FC17DEA32773263300EFBFE1 /* DateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC17DEA22773263300EFBFE1 /* DateFormatter.swift */; };
+		FC17DEA42773286500EFBFE1 /* MyPhotoPrivider.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC2D2A952771FCF600014449 /* MyPhotoPrivider.swift */; };
+		FC17DEA5277328A300EFBFE1 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC17DEA02773223A00EFBFE1 /* ViewModel.swift */; };
+		FC17DEA727732D1C00EFBFE1 /* MyPhotoEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC2D2A932771FCDA00014449 /* MyPhotoEntry.swift */; };
+		FC17DEA827732D7600EFBFE1 /* MyPhotoEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC2D2A972771FD0700014449 /* MyPhotoEntryView.swift */; };
+		FC17DEA927732E0900EFBFE1 /* DateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC17DEA22773263300EFBFE1 /* DateFormatter.swift */; };
+		FC17DEAA27734C0700EFBFE1 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC2D2A8E2771FC0A00014449 /* Network.swift */; };
+		FC17DEAC2773540800EFBFE1 /* RepositoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC17DEAB2773540800EFBFE1 /* RepositoryViewController.swift */; };
 		FC2D2A8F2771FC0A00014449 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC2D2A8E2771FC0A00014449 /* Network.swift */; };
-		FC2D2A902771FC4700014449 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC2D2A8E2771FC0A00014449 /* Network.swift */; };
 		FC2D2A9F2771FE0300014449 /* MyPhotoEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC2D2A972771FD0700014449 /* MyPhotoEntryView.swift */; };
 		FC2D2AA02771FE0300014449 /* MyPhotoPlaceholderView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC2D2A992771FD1900014449 /* MyPhotoPlaceholderView.swift */; };
 		FC2D2AA12771FE0300014449 /* MyPhotoEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC2D2A932771FCDA00014449 /* MyPhotoEntry.swift */; };
@@ -61,6 +69,9 @@
 		4D9C74E0CFAC8C97CD0C6D64 /* Pods-Lab.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lab.release.xcconfig"; path = "Target Support Files/Pods-Lab/Pods-Lab.release.xcconfig"; sourceTree = "<group>"; };
 		53AA8D89109E88497E5A8E89 /* Pods_Lab.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Lab.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		5AA4398CC830E4A153EAA794 /* Pods-Lab.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Lab.debug.xcconfig"; path = "Target Support Files/Pods-Lab/Pods-Lab.debug.xcconfig"; sourceTree = "<group>"; };
+		FC17DEA02773223A00EFBFE1 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		FC17DEA22773263300EFBFE1 /* DateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatter.swift; sourceTree = "<group>"; };
+		FC17DEAB2773540800EFBFE1 /* RepositoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RepositoryViewController.swift; sourceTree = "<group>"; };
 		FC2D2A8E2771FC0A00014449 /* Network.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Network.swift; sourceTree = "<group>"; };
 		FC2D2A932771FCDA00014449 /* MyPhotoEntry.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPhotoEntry.swift; sourceTree = "<group>"; };
 		FC2D2A952771FCF600014449 /* MyPhotoPrivider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MyPhotoPrivider.swift; sourceTree = "<group>"; };
@@ -121,7 +132,10 @@
 				229F8A1E276C180400F20A34 /* AppDelegate.swift */,
 				229F8A20276C180400F20A34 /* SceneDelegate.swift */,
 				229F8A22276C180400F20A34 /* ViewController.swift */,
+				FC17DEAB2773540800EFBFE1 /* RepositoryViewController.swift */,
+				FC17DEA02773223A00EFBFE1 /* ViewModel.swift */,
 				FC2D2A8E2771FC0A00014449 /* Network.swift */,
+				FC17DEA22773263300EFBFE1 /* DateFormatter.swift */,
 				229F8A27276C180A00F20A34 /* Assets.xcassets */,
 				229F8A29276C180A00F20A34 /* LaunchScreen.storyboard */,
 				229F8A2C276C180A00F20A34 /* Info.plist */,
@@ -323,10 +337,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FC17DEA32773263300EFBFE1 /* DateFormatter.swift in Sources */,
+				FC17DEA12773223A00EFBFE1 /* ViewModel.swift in Sources */,
 				229F8A23276C180400F20A34 /* ViewController.swift in Sources */,
 				229F8A1F276C180400F20A34 /* AppDelegate.swift in Sources */,
+				FC17DEAC2773540800EFBFE1 /* RepositoryViewController.swift in Sources */,
 				FC2D2A8F2771FC0A00014449 /* Network.swift in Sources */,
 				229F8A21276C180400F20A34 /* SceneDelegate.swift in Sources */,
+				FC17DEA42773286500EFBFE1 /* MyPhotoPrivider.swift in Sources */,
+				FC17DEA827732D7600EFBFE1 /* MyPhotoEntryView.swift in Sources */,
+				FC17DEA727732D1C00EFBFE1 /* MyPhotoEntry.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -334,11 +354,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FC2D2A902771FC4700014449 /* Network.swift in Sources */,
 				FC2D2AA22771FE0300014449 /* MyPhotoPrivider.swift in Sources */,
 				FC2D2AA02771FE0300014449 /* MyPhotoPlaceholderView.swift in Sources */,
+				FC17DEAA27734C0700EFBFE1 /* Network.swift in Sources */,
 				FC2D2A9F2771FE0300014449 /* MyPhotoEntryView.swift in Sources */,
+				FC17DEA927732E0900EFBFE1 /* DateFormatter.swift in Sources */,
 				FCCB9DF22771EF3300EC99F9 /* MyPhotoWidget.swift in Sources */,
+				FC17DEA5277328A300EFBFE1 /* ViewModel.swift in Sources */,
 				FC2D2AA12771FE0300014449 /* MyPhotoEntry.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

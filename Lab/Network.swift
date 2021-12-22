@@ -8,7 +8,22 @@
 import Foundation
 
 class Network {
-    func getRepository(name: String) {
+    
+    func getImage(url: String, completion: @escaping (Result<Data, Error>) -> ()) {
+        guard let url = URL(string: url) else {
+            completion(.failure(NSError()))
+            return
+        }
         
+        let request = URLRequest(url: url)
+        
+        URLSession.shared.dataTask(with: request) { data, _, error in
+            guard let data = data else {
+                completion(.failure(NSError()))
+                return
+            }
+            
+            completion(.success(data))
+        }.resume()
     }
 }

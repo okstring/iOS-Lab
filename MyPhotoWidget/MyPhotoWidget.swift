@@ -23,10 +23,3 @@ struct MyPhotoWidget: Widget {
 
     }
 }
-
-struct MyPhotoWidget_Previews: PreviewProvider {
-    static var previews: some View {
-        MyPhotoWidgetEntryView(entry: MyPhotoEntry(date: Date(), imageData: Data(), profileURL: ""))
-            .previewContext(WidgetPreviewContext(family: .systemSmall))
-    }
-}

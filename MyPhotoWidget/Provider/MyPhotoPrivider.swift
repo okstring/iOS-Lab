@@ -9,7 +9,7 @@ import Foundation
 import WidgetKit
 
 struct Provider: TimelineProvider {
-    let viewModel = ViewModel()
+    let viewModel = Interactor()
     
     func placeholder(in context: Context) -> MyPhotoEntry {
         MyPhotoEntry(date: Date(), imageData: Data(), profileURL: "")

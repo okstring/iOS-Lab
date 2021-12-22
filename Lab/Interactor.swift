@@ -1,5 +1,5 @@
 //
-//  ViewModel.swift
+//  Interactor.swift
 //  Lab
 //
 //  Created by Ok Hyeon Kim on 2021/12/22.
@@ -7,7 +7,7 @@
 
 import Foundation
 
-class ViewModel {
+class Interactor {
     let network = Network()
     
     let imagesURL = ["https://avatars.githubusercontent.com/u/62657991?v=4"]

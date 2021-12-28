@@ -14,12 +14,8 @@
 		229F8A2B276C180A00F20A34 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 229F8A29276C180A00F20A34 /* LaunchScreen.storyboard */; };
 		FC17DEA12773223A00EFBFE1 /* Interactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC17DEA02773223A00EFBFE1 /* Interactor.swift */; };
 		FC17DEA32773263300EFBFE1 /* DateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC17DEA22773263300EFBFE1 /* DateFormatter.swift */; };
-		FC17DEA42773286500EFBFE1 /* MyPhotoPrivider.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC2D2A952771FCF600014449 /* MyPhotoPrivider.swift */; };
 		FC17DEA5277328A300EFBFE1 /* Interactor.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC17DEA02773223A00EFBFE1 /* Interactor.swift */; };
-		FC17DEA727732D1C00EFBFE1 /* MyPhotoEntry.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC2D2A932771FCDA00014449 /* MyPhotoEntry.swift */; };
-		FC17DEA827732D7600EFBFE1 /* MyPhotoEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC2D2A972771FD0700014449 /* MyPhotoEntryView.swift */; };
 		FC17DEA927732E0900EFBFE1 /* DateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC17DEA22773263300EFBFE1 /* DateFormatter.swift */; };
-		FC17DEAA27734C0700EFBFE1 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC2D2A8E2771FC0A00014449 /* Network.swift */; };
 		FC17DEAC2773540800EFBFE1 /* RepositoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC17DEAB2773540800EFBFE1 /* RepositoryViewController.swift */; };
 		FC2D2A8F2771FC0A00014449 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC2D2A8E2771FC0A00014449 /* Network.swift */; };
 		FC2D2A9F2771FE0300014449 /* MyPhotoEntryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC2D2A972771FD0700014449 /* MyPhotoEntryView.swift */; };
@@ -30,6 +26,7 @@
 		FCCB9DF22771EF3300EC99F9 /* MyPhotoWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCCB9DF12771EF3300EC99F9 /* MyPhotoWidget.swift */; };
 		FCCB9DF42771EF3400EC99F9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FCCB9DF32771EF3400EC99F9 /* Assets.xcassets */; };
 		FCCB9DF82771EF3400EC99F9 /* MyPhotoWidgetExtension.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = FCCB9DEB2771EF3300EC99F9 /* MyPhotoWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		FCDC0929277AE49200D9CE00 /* Network.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC2D2A8E2771FC0A00014449 /* Network.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -289,9 +286,6 @@
 				FC17DEAC2773540800EFBFE1 /* RepositoryViewController.swift in Sources */,
 				FC2D2A8F2771FC0A00014449 /* Network.swift in Sources */,
 				229F8A21276C180400F20A34 /* SceneDelegate.swift in Sources */,
-				FC17DEA42773286500EFBFE1 /* MyPhotoPrivider.swift in Sources */,
-				FC17DEA827732D7600EFBFE1 /* MyPhotoEntryView.swift in Sources */,
-				FC17DEA727732D1C00EFBFE1 /* MyPhotoEntry.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -300,11 +294,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				FC2D2AA22771FE0300014449 /* MyPhotoPrivider.swift in Sources */,
-				FC17DEAA27734C0700EFBFE1 /* Network.swift in Sources */,
 				FC2D2A9F2771FE0300014449 /* MyPhotoEntryView.swift in Sources */,
 				FC17DEA927732E0900EFBFE1 /* DateFormatter.swift in Sources */,
 				FCCB9DF22771EF3300EC99F9 /* MyPhotoWidget.swift in Sources */,
 				FC17DEA5277328A300EFBFE1 /* Interactor.swift in Sources */,
+				FCDC0929277AE49200D9CE00 /* Network.swift in Sources */,
 				FC2D2AA12771FE0300014449 /* MyPhotoEntry.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

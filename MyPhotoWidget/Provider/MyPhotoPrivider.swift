@@ -9,7 +9,7 @@ import Foundation
 import WidgetKit
 
 struct Provider: TimelineProvider {
-    let viewModel = Interactor()
+    let interactor = Interactor()
     
     func placeholder(in context: Context) -> MyPhotoEntry {
         MyPhotoEntry(date: Date(), imageData: Data(), profileURL: "")
@@ -33,13 +33,13 @@ struct Provider: TimelineProvider {
         
         
         fetchQueue.async(group: group) {
-            for index in 0..<viewModel.imagesURL.count {
+            for index in 0..<interactor.imagesURL.count {
                 group.enter()
                 
-                viewModel.fetchAllImageData(index: index) { result in
+                interactor.fetchAllImageData(index: index) { result in
                     switch result {
                     case .success(let data):
-                        let entry = MyPhotoEntry(date: entryDate, imageData: data, profileURL: viewModel.profileURL[index])
+                        let entry = MyPhotoEntry(date: entryDate, imageData: data, profileURL: interactor.profileURL[index])
                         entries.append(entry)
                         group.leave()
                     case .failure(let error):
